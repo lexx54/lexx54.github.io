@@ -25,7 +25,7 @@
     <header>
       <img src="" alt="" />
       <div>
-        <p>Heaer title</p>
+        <p>Header title</p>
         <p>Header Description</p>
         <span>
           <input type="text" />
@@ -33,7 +33,23 @@
         </span>
       </div>
     </header>
-    <main>main</main>
+    <main>
+      <div class="main-header">
+        <picture>
+          <source
+            srcset="./assets/students-lg.jpg"
+            media="(min-width: 860px)"
+          />
+          <source
+            srcset="./assets/students-sm.jpg"
+            media="(max-width: 859px)"
+          />
+          <img src="./assets/students-sm.jpg" alt="" />
+        </picture>
+      </div>
+      <div class="main-container"></div>
+      <div class="main-extra"></div>
+    </main>
     <footer>footer</footer>
   </body>
 </html>
