@@ -256,7 +256,7 @@ footer {
 }
 
 footer > div:first-child {
-  flex: 0 0 70%;
+  flex: 0 0 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,7 +264,7 @@ footer > div:first-child {
 }
 footer > div:first-child > p:first-child {
   font-family: "Fredoka One", cursive;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 footer > div:last-child {
   flex: 1;
@@ -283,4 +283,14 @@ footer > div:last-child > p:first-child {
   text-decoration: none;
   font-weight: 700;
   color: var(--secondary);
+}
+
+@media screen and (min-width:720px){
+  footer > div:first-child{
+    flex: 0 0 70%;
+  }
+  footer > div:first-child > p:first-child{
+    font-size: 3rem;
+  }
+
 }
