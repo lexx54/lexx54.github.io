@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  font-family: "Merriweather", serif;
 }
 
 /*-------------------------Nav bar ------------------------*/
@@ -28,6 +29,7 @@ nav {
   margin-left: 1rem;
   font-size: 1.5rem;
   padding: 1rem 0;
+  font-family: "Fredoka One", cursive;
 }
 .nav-btns > ul {
   display: flex;
@@ -233,14 +235,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 1rem 1.5rem;
   align-items: center;
   border-radius: 50px;
   text-align: justify;
 }
 
 .main-extra > article > h3 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 1rem;
 }
@@ -249,6 +251,33 @@ main {
 footer {
   background-color: var(--principal);
   min-height: 150px;
+  display: flex;
+  color: white;
+}
+
+footer > div:first-child {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer > div:first-child > p:first-child {
+  font-family: "Fredoka One", cursive;
+  font-size: 3rem;
+}
+footer > div:last-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  word-break: break-all;
+}
+footer > div:last-child > p:first-child {
+  font-size: 1.3rem;
+  font-weight: bold;
+  align-self: center;
+  color: var(--secondary);
 }
 .portfolio-link {
   text-decoration: none;
